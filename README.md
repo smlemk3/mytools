@@ -23,3 +23,7 @@ cat <<EOF >/etc/rc.local
 exit 0
 EOF
 ```
+```Bash
+chmod +x /etc/rc.local && systemctl enable --now rc-local
+#可能会出现警告信息，无视
+```
