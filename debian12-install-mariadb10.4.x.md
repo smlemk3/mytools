@@ -40,7 +40,7 @@ apt install -y iptables-persistent
 iptables -I INPUT 1 -i lo -j ACCEPT
 iptables -I INPUT 2 -m state --state ESTABLISHED,RELATED -j ACCEPT
 iptables -I INPUT 3 -p tcp --dport 22 -j ACCEPT
-iptables -I INPUT 3 -p tcp --dport 65522 -j ACCEPT
+iptables -I INPUT 3 -p tcp --dport 42222 -j ACCEPT
 iptables -I INPUT 4 -p tcp --dport 80 -j ACCEPT
 iptables -I INPUT 5 -p tcp --dport 443 -j ACCEPT
 iptables -I INPUT 6 -p tcp --dport 3306 -j DROP
