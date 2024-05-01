@@ -27,3 +27,8 @@ EOF
 chmod +x /etc/rc.local && systemctl enable --now rc-local
 #可能会出现警告信息，无视
 ```
+# moeclub 网络安装debian脚本
+```Bash
+bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/MoeClub/Note/master/InstallNET.sh') -d 12 -v 64 -p "younewpass" -port 8222
+```
+
