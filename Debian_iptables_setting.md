@@ -128,3 +128,6 @@ COMMIT
 # Completed on Sat May 11 17:44:56 2024
 EOF
 ```
+```Bash
+/etc/init.d/netfilter-persistent reload
+```
