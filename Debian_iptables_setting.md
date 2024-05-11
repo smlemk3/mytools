@@ -119,6 +119,7 @@ cat <<EOF > /etc/iptables/rules.v6
 :INPUT ACCEPT [0:0]
 :FORWARD ACCEPT [0:0]
 :OUTPUT ACCEPT [0:0]
+-A INPUT -i lo -j ACCEPT
 -A INPUT -p tcp -m tcp --dport 3306 -j DROP
 -A INPUT -s 2602:80d:1000:b0cc:e::/80 -j DROP
 -A INPUT -s 2620:96:e000:b0cc:e::/80 -j DROP
