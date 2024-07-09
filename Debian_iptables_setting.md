@@ -94,7 +94,9 @@ cat <<EOF > /etc/iptables/rules.v4
 -A INPUT -s 167.94.145.0/24 -j DROP
 -A INPUT -s 167.94.146.0/24 -j DROP
 -A INPUT -s 167.248.133.0/24 -j DROP
--A INPUT -s 103.213.247.10/32 -j DROP
+-A INPUT -s 199.45.154.0/24 -j DROP
+-A INPUT -s 199.45.155.0/24 -j DROP
+-A INPUT -s 206.168.34.0/24 -j DROP
 # block end
 -A INPUT -i lo -j ACCEPT
 -A INPUT -d 127.0.0.0/8 ! -i lo -j REJECT --reject-with icmp-port-unreachable
