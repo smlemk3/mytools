@@ -1,6 +1,6 @@
 # 一些杂物
 Debian iptables 配置
-Debian_iptables_setting.md
+[Debian_iptables_setting.md](https://github.com/smlemk3/mytools/blob/main/Debian_iptables_setting.md)
 
 # 新debian 11 12 /etc/rc.local 开机启动
 ```Bash
