@@ -1,8 +1,6 @@
 # 一些杂物
-# 封锁censys、shodan 扫描IP iptables已经允许端口访问, 再执行这脚本就没啥效果了，需要在开放端口之前drop掉 这些 IP
-```Bash
-wget https://raw.githubusercontent.com/smlemk3/mytools/main/block_censys_shodan.sh && chmod +x block_censys_shodan.sh
-```
+Debian iptables 配置
+Debian_iptables_setting.md
 
 # 新debian 11 12 /etc/rc.local 开机启动
 ```Bash
