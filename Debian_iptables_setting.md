@@ -67,9 +67,7 @@ COMMIT
 COMMIT
 # Completed on Mon Nov  3 05:07:24 2025
 EOF
-```
-恢复iptables4规则
-```Bash
+
 iptables-restore < /etc/iptables/rules.v4
 ```
 IPv6 防火墙规则
@@ -89,8 +87,7 @@ cat <<EOF > /etc/iptables/rules.v6
 COMMIT
 # Completed on Sat May 11 17:44:56 2024
 EOF
-```
-```Bash
-/etc/init.d/netfilter-persistent reload
+
+iptables6-restore < /etc/iptables/rules.v4
 ```
 
