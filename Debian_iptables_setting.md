@@ -7,7 +7,7 @@ apt update && apt install iptables-persistent ipset -y
 ipset屏蔽列表 + 还原
 ```Bash
 wget https://raw.githubusercontent.com/smlemk3/mytools/refs/heads/main/ipset.conf -O /etc/ipset.conf
-ipset restore < /etc/ipset.conf
+ipset restore -! < /etc/ipset.conf
 ```
 #########开机恢复ipset######
 ```Bash
